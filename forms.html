@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table & Form</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Table & Feedback Form</h1>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Task 1: Layout</a>
+  <a href="tribute.html">Task 2: Tribute Page</a>
+  <a href="tables.html">Task 3: Table</a>
+  <a href="forms.html">Task 3: Form</a>
+</div>
+
+<div class="content">
+    <h2 style="text-align:center;color:#8B0000;">Feedback Form</h2>
+  <form id="feedback-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="role">Role:</label><br>
+    <select id="role" name="role">
+      <option>Student</option>
+      <option>Teacher</option>
+      <option>Other</option>
+    </select><br>
+
+    <p>Would you recommend our restaurant?</p>
+<label class="radio-label">
+  <input type="radio" name="recommend" value="yes"> Yes
+</label>
+<label class="radio-label">
+  <input type="radio" name="recommend" value="no"> No <br><br>
+</label>
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="5"></textarea><br>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
+</div>
+
+<div class="footer">
+  <p>&copy; 2025 Restaurant Management System</p>
+</div>
+
+</body>
+</html>
