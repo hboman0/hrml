@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            flex: 1 1 100%;
+            padding: 20px;
+            margin: 5px;
+            background: lightblue;
+            text-align: center;
+        }
+
+        @media (min-width: 600px) {
+            .box {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .box {
+                flex: 1 1 30%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "box">Box 1</div>
+            <div class = "box">Box 2</div>
+            <div class = "box">Box 3</div>
+        </div>
+    </body>
+</html>
